@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>上传发布博客失败Error: Spawn failed</title>
+      <link href="/2022/09/18/%E4%B8%8A%E4%BC%A0%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2%E5%A4%B1%E8%B4%A5Error-Spawn-failed/"/>
+      <url>/2022/09/18/%E4%B8%8A%E4%BC%A0%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2%E5%A4%B1%E8%B4%A5Error-Spawn-failed/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>$hexo d上传发布博客时出现FATAL Something’s wrong. Maybe you can find the solution here: <a href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a> Error: Spawn failed</p></blockquote><p>个人原因大概为修改了<code> .deploy_git</code>文件夹下的一些内容（虽然感觉哪里都没动）</p><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> config --global core.autocrlf <span class="token boolean">false</span> <span class="token comment" spellcheck="true"># Git下处理“换行”，修改为false,line endings将不做转换操作</span><span class="token comment" spellcheck="true"># 然后重新再次依次执行命令行就好了</span>hexo clean <span class="token comment" spellcheck="true">#清除缓存文件 (db.json) 和已生成的静态文件 (public)</span>hexo g <span class="token comment" spellcheck="true">#生成静态文件</span>hexo d <span class="token comment" spellcheck="true">#部署</span></code></pre><p>然后就ok了</p><p>发条blog记录一下</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2022/09/18/hello-world/"/>
+      <url>/2022/09/18/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
